@@ -12,9 +12,11 @@
 		38F2B36525F2D454002CC8BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2B36425F2D454002CC8BB /* ViewController.swift */; };
 		38F2B36A25F2D455002CC8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F2B36925F2D455002CC8BB /* Assets.xcassets */; };
 		38F2B36D25F2D455002CC8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F2B36B25F2D455002CC8BB /* LaunchScreen.storyboard */; };
+		EBB0A34F72E124FE4538D3E5 /* Pods_AzureAppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CE9F3302E0A75B8F892B4E /* Pods_AzureAppCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07926B7B4EE5DDAB20409324 /* Pods-AzureAppCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAppCenter.debug.xcconfig"; path = "Target Support Files/Pods-AzureAppCenter/Pods-AzureAppCenter.debug.xcconfig"; sourceTree = "<group>"; };
 		38F2B35D25F2D454002CC8BB /* AzureAppCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureAppCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F2B36025F2D454002CC8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38F2B36225F2D454002CC8BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		38F2B36925F2D455002CC8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38F2B36C25F2D455002CC8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38F2B36E25F2D455002CC8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CE9F3302E0A75B8F892B4E /* Pods_AzureAppCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureAppCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDED2ECD069B0E1704C2BA40 /* Pods-AzureAppCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureAppCenter.release.xcconfig"; path = "Target Support Files/Pods-AzureAppCenter/Pods-AzureAppCenter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB0A34F72E124FE4538D3E5 /* Pods_AzureAppCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				38F2B35F25F2D454002CC8BB /* AzureAppCenter */,
 				38F2B35E25F2D454002CC8BB /* Products */,
+				F66551802FA72A3FCEF667E6 /* Pods */,
+				D664DADB99CCE7C925366131 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +87,24 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		D664DADB99CCE7C925366131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4CE9F3302E0A75B8F892B4E /* Pods_AzureAppCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F66551802FA72A3FCEF667E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07926B7B4EE5DDAB20409324 /* Pods-AzureAppCenter.debug.xcconfig */,
+				BDED2ECD069B0E1704C2BA40 /* Pods-AzureAppCenter.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38F2B37125F2D455002CC8BB /* Build configuration list for PBXNativeTarget "AzureAppCenter" */;
 			buildPhases = (
+				BD317DD83DEC7E956C8A773F /* [CP] Check Pods Manifest.lock */,
 				38F2B35925F2D454002CC8BB /* Sources */,
 				38F2B35A25F2D454002CC8BB /* Frameworks */,
 				38F2B35B25F2D454002CC8BB /* Resources */,
@@ -143,6 +169,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD317DD83DEC7E956C8A773F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AzureAppCenter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38F2B35925F2D454002CC8BB /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		38F2B37225F2D455002CC8BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07926B7B4EE5DDAB20409324 /* Pods-AzureAppCenter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +358,7 @@
 		};
 		38F2B37325F2D455002CC8BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDED2ECD069B0E1704C2BA40 /* Pods-AzureAppCenter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
